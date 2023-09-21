@@ -5,24 +5,36 @@
       <h2>Generate Data</h2>
       <p>Add your prompt below to generate sample data:</p>
     </div>
-    <div class="col-md-4"> <!-- Adjust the column size as needed -->
-      <form id="generateForm" class="mb-4">
-        <div class="mb-3">
-              <label for="selectOption">Select Scenario:</label>
-              <select id="selectOption">
-                <option value="1">Scenario 1: creating jobseeker and site data instance</option>
-                <option value="2">Scenario 2: when you need student data</option>
-                <option value="3">Scenario 3: testing teacher student course enrollments</option>
-                <option value="4">Scenario 4: testing all the data</option>
-                <!-- Add more options as needed -->
-              </select>
-        </div>
+  </div>
+
+  <form id="generateForm" class="mb-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center  mb-1">
+        <label>Select Scenario:</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center  mb-4">
+        <select id="selectOption">
+          <option value="1">Scenario 1: creating jobseeker and site data instance</option>
+          <option value="2">Scenario 2: when you need student data</option>
+          <option value="3">Scenario 3: testing teacher student course enrollments</option>
+          <option value="4">Scenario 4: testing all the data</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
         <div class="d-grid gap-2">
           <button id="generateButton" type="button" class="btn btn-success">Generate</button>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
+  </form>
 
   <!-- Graph Row -->
   <div class="row mt-5 justify-content-center">

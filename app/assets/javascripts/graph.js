@@ -33,15 +33,35 @@ async function fetchData() {
 }
 
 function callGenerator() {
-  // Example usage
-  fetchData()
-    .then((links) => {
-      main(links);
-    })
-    .catch((error) => {
-      console.error("An error occurred:", error.message);
-    });
+  // Show the spinner
+  $(".graph-box").html('<div class="spinner"></div>');
+
+  // Generate a random duration between 3 to 5 seconds
+  const randomDuration = Math.floor(Math.random() * (5000 - 3000 + 1) + 3000);
+
+  // Delay the execution by the random duration
+  setTimeout(() => {
+    // Fetch data after the random duration
+    fetchData()
+      .then((links) => {
+        main(links);
+      })
+      .catch((error) => {
+        console.error("An error occurred:", error.message);
+      });
+  }, randomDuration);
 }
+
+// function callGenerator() {
+//   // Example usage
+//   fetchData()
+//     .then((links) => {
+//       main(links);
+//     })
+//     .catch((error) => {
+//       console.error("An error occurred:", error.message);
+//     });
+// }
 
 function main(links) {
   var nodes = {};
