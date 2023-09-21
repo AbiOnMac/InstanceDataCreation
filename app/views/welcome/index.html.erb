@@ -5,9 +5,13 @@
           <h2>Generate Data</h2>
           <form id="generateForm">
             <fieldset>
-              <label for="textarea">What do you desire</label>
-              <textarea id="desire" name="desire" cols='70' rows='5'></textarea>
-              <br>
+              <label for="selectOption">Select Scenario:</label>
+              <select id="selectOption">
+                <option value="1">Scenario 1: creating jobseeker and site data instance</option>
+                <option value="2">Scenario 2: when you need student data</option>
+                <option value="3">Scenario 3: testing teacher student course enrollments</option>
+                <!-- Add more options as needed -->
+              </select>
             </fieldset>
             <button id="generateButton" type="button">Generate</button>
           </form>

@@ -11,7 +11,9 @@ $(document).ready(function () {
 
 async function fetchData() {
   try {
-    const response = await fetch("/generator");
+    const id = $("#selectOption").val();
+    console.log(`selected    :   ${id}`);
+    const response = await fetch(`/generator/${id}`);
     if (!response.ok) {
       throw new Error("Network response was not ok.");
     }
