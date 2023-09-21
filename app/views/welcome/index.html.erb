@@ -8,7 +8,13 @@
     <div class="col-md-4"> <!-- Adjust the column size as needed -->
       <form id="generateForm" class="mb-4">
         <div class="mb-3">
-          <textarea id="desire" name="desire" class="form-control form-control-sm" rows="3" placeholder="Enter your prompt here..."></textarea>
+              <label for="selectOption">Select Scenario:</label>
+              <select id="selectOption">
+                <option value="1">Scenario 1: creating jobseeker and site data instance</option>
+                <option value="2">Scenario 2: when you need student data</option>
+                <option value="3">Scenario 3: testing teacher student course enrollments</option>
+                <!-- Add more options as needed -->
+              </select>
         </div>
         <div class="d-grid gap-2">
           <button id="generateButton" type="button" class="btn btn-success">Generate</button>

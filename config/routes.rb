@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'chatgpt/chat_request'
   get 'welcome/index'
   root 'welcome#index'
-  resources :generator, only: [:index]
+  resources :generator, only: [:show]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
